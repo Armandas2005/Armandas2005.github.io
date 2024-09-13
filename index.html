@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Armandas | Visual Effects Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="fade-in">Hi, I'm Armandas <span class="alias">(aka Spixy)</span></h1>
+            <p class="fade-in">I am a visual effects artist, working on everything from gaming videos to montages to tutorials. I am always striving to showcase creativity and learn to become a better artist every day.</p>
+        </div>
+    </header>
+
+    <section class="work-showcase">
+        <div class="container">
+            <h2 class="fade-in">Work Showcase!</h2>
+            <div class="videos">
+                <div class="video-item fade-in">
+                    <a href="https://www.youtube.com/watch?v=LgxT5atqDBE" target="_blank">
+                        <img src="https://img.youtube.com/vi/LgxT5atqDBE/maxresdefault.jpg" alt="Video Thumbnail 1">
+                    </a>
+                    <p>Gaming Montage 1</p>
+                </div>
+                <div class="video-item fade-in">
+                    <a href="https://www.youtube.com/watch?v=uRW0OUpNql4" target="_blank">
+                        <img src="https://img.youtube.com/vi/uRW0OUpNql4/maxresdefault.jpg" alt="Video Thumbnail 2">
+                    </a>
+                    <p>Gaming Montage 2</p>
+                </div>
+                <div class="video-item fade-in">
+                    <a href="https://www.youtube.com/watch?v=4B1NwrdN-tM" target="_blank">
+                        <img src="https://img.youtube.com/vi/4B1NwrdN-tM/maxresdefault.jpg" alt="Video Thumbnail 3">
+                    </a>
+                    <p>Tutorial 1</p>
+                </div>
+                <div class="video-item fade-in">
+                    <a href="https://www.youtube.com/watch?v=-SsfO-eHKAg" target="_blank">
+                        <img src="https://img.youtube.com/vi/-SsfO-eHKAg/maxresdefault.jpg" alt="Video Thumbnail 4">
+                    </a>
+                    <p>Tutorial 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="connect">
+        <div class="container">
+            <h2 class="fade-in">Connect with Me!</h2>
+            <a href="https://linktr.ee/spixy" target="_blank" class="btn fade-in">Linktree</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="fade-in">&copy; 2024 Armandas (Spixy). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const fadeElements = document.querySelectorAll('.fade-in');
+        window.addEventListener('scroll', () => {
+            fadeElements.forEach(el => {
+                const position = el.getBoundingClientRect().top;
+                if (position < window.innerHeight) {
+                    el.style.opacity = 1;
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
