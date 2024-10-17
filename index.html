@@ -18,7 +18,7 @@
 
     <section class="work-showcase">
         <div class="container">
-            <h2 class="fade-in">Work Showcase!</h2>
+            <h2 class="fade-in">Work Showcase</h2>
             <div class="videos">
                 <div class="video-item fade-in">
                     <a href="https://www.youtube.com/watch?v=LgxT5atqDBE" target="_blank">
@@ -62,14 +62,11 @@
     </footer>
 
     <script>
-        const fadeElements = document.querySelectorAll('.fade-in');
-        window.addEventListener('scroll', () => {
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
             fadeElements.forEach(el => {
-                const position = el.getBoundingClientRect().top;
-                if (position < window.innerHeight) {
-                    el.style.opacity = 1;
-                    el.style.transform = 'translateY(0)';
-                }
+                el.style.opacity = 1;
+                el.style.transform = 'translateY(0)';
             });
         });
     </script>
